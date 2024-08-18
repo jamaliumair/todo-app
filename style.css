@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 90vh;
-    max-width: 700px;
+    max-width: 60%;
     margin: 0 auto;
 }
 .container>div {
@@ -37,18 +37,15 @@ h1 {
     background-color: aqua;
 }
 
-.todo-list {
- width: 80%;
-}
 .btns>button { 
-     border: 1px solid blueviolet;
+    border: 1px solid blueviolet;
     background-color: white;
     padding: 5px 20px;
     /* margin-left: 20px; */
     border-radius: 5px;
     font-weight: bold;
     transition: background-color, border .5s;
-
+    
 }
 .btns>button:hover {
     color: #fff;
@@ -56,13 +53,27 @@ h1 {
     background-color: aqua;
 }
 
-.todo-list>p {
+.todo-list {
+    width: 80%;
+}
+
+.todoContainer {
     font-size: 20px;
     text-transform: capitalize;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: .5rem;
+    padding: .5rem 0 0 0;
     border-bottom: 1px solid lightgray;
+}
+
+.todo-list>p {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
 }
